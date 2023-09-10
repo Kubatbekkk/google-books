@@ -1,23 +1,23 @@
 export interface BooksResponse {
-  items: BookInfo[];
+  kind: string;
   totalItems: number;
+  items: Books[];
 }
 
-export interface BookInfo {
-  volumeInfo: BookVolumeInfo;
+export interface Books {
   id: string;
+  volumeInfo: VolumeInfo;
 }
 
-export interface BookVolumeInfo {
+export interface VolumeInfo {
   title: string;
   authors: string[];
+  publisher?: string;
+  publishedDate: string;
+  description?: string;
   categories: string[];
-  imageLinks: BookImages;
+  imageLinks?: {
+    smallThumbnail: string;
+    thumbnail: string;
+  };
 }
-
-export interface BookImages {
-  smallThumbnail: string;
-  thumbnail: string;
-}
-
-export default BooksResponse;

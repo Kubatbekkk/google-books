@@ -1,5 +1,5 @@
 import { Card, Row } from "react-bootstrap"
-import { Books } from "./booksSlice"
+import { Books } from '../../types/BookResponse'
 import noImage from '../../assets/no-image.png'
 import { Link } from "react-router-dom"
 

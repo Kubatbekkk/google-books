@@ -1,30 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import type { RootState } from '../../app/store';
 import { fetchBooksLogic } from './services/fetchBookLogic';
-
-interface BooksResponse {
-  kind: string;
-  totalItems: number;
-  items: Books[];
-}
-
-export interface Books {
-  id: string;
-  volumeInfo: VolumeInfo;
-}
-
-interface VolumeInfo {
-  title: string;
-  authors: string[];
-  publisher?: string;
-  publishedDate: string;
-  description?: string;
-  categories: string[];
-  imageLinks?: {
-    smallThumbnail: string;
-    thumbnail: string;
-  };
-}
+import type { BooksResponse } from '../../types/BookResponse';
 
 interface BooksState {
   isLoading: 'idle' | 'isLoading' | 'succeeded' | 'failed';
