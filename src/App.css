@@ -1,0 +1,62 @@
+.header {
+  height: 230px;
+  background: rgb(148, 186, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 186, 152, 1) 0%,
+    rgba(86, 121, 53, 0.6825323879551821) 31%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  box-shadow: rgba(72, 142, 212, 0.2) 0px 8px 24px;
+}
+
+.header h1 {
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  height: 100%;
+  min-height: 28rem;
+}
+
+.card-title {
+  min-height: 2.75rem;
+}
+
+.card-img {
+  display: block;
+  background-position: center;
+  background-size: contain !important;
+  object-fit: cover;
+}
+
+.load-more-btn {
+  width: 220px;
+}
+
+.card-on-hover {
+  width: 19rem;
+  max-width: 21rem;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-on-hover:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.02);
+}
+
+.img-thumbnail {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+@media screen and (max-width: 767px) {
+  .img-wrapper {
+    height: 300px;
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+}
