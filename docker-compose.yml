@@ -1,7 +1,7 @@
 version: '3'
 services:
   book_finder:
-    image: book_finder:1.0.2
+    image: book_finder
     ports:
       - '5173:5173'
     build:
