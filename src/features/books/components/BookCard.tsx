@@ -1,6 +1,6 @@
 import { Card, Row } from "react-bootstrap"
-import { Books } from '../../types/BookResponse'
-import noImage from '../../assets/no-image.png'
+import type { Books } from '../../../types/BookResponse'
+import noImage from '../../../assets/no-image.png'
 import { Link } from "react-router-dom"
 
 interface CardProps {

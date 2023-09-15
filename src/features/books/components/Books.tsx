@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Container, Button, Row } from 'react-bootstrap';
 import Spinner from 'react-bootstrap/Spinner';
 
-import BooksList from './BooksList';
-import { fetchMoreBooks, getBooksList, getBooksStatus, getIsLoadingButton, getSearchParams, getTotalItems } from './booksSlice';
-import type { AppDispatch } from '../../app/store';
+import { BooksList } from '..';
+import { fetchMoreBooks, getBooksList, getBooksStatus, getIsLoadingButton, getSearchParams, getTotalItems } from '../booksSlice';
+import type { AppDispatch } from '../../../app/store';
 import { useNavigate } from 'react-router';
-import { MAX_RESULTS } from '../../constants/api';
+import { MAX_RESULTS } from '../../../constants/api';
 
 const Books = () => {
   const status = useSelector(getBooksStatus)

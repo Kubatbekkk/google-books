@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux"
 import { useParams } from "react-router"
-import { getBooksList } from "./booksSlice"
+import { getBooksList } from "../booksSlice"
 import { Link } from "react-router-dom"
-import noImage from '../../assets/no-image.png'
+import noImage from '../../../assets/no-image.png'
 import { Button, Card, Col, Container, Row } from "react-bootstrap"
 import { useState } from "react"
 

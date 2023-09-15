@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
-import { getBooksList } from "./booksSlice"
-import BookCard from "./BookCard"
+import { getBooksList } from "../booksSlice"
+import { BookCard } from ".."
 import { Col, Container, Row } from "react-bootstrap"
 
 export default function BooksList() {

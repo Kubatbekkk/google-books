@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import { CATEGORY_SELECT_OPTIONS, SORT_SELECT_OPTIONS } from '../../constants/form';
+import { CATEGORY_SELECT_OPTIONS, SORT_SELECT_OPTIONS } from '../../../constants/form';
 
 import {
   Col,
@@ -15,9 +15,9 @@ import {
   InputGroup,
   Button,
 } from 'react-bootstrap';
-import { fetchBooks } from './booksSlice';
-import { AppDispatch } from '../../app/store';
-import type { FetchBooksArgs } from './booksSlice';
+import { fetchBooks } from '../booksSlice';
+import type { AppDispatch } from '../../../app/store';
+import type { FetchBooksArgs } from '../booksSlice';
 
 const SerchTermForm = () => {
 
