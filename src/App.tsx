@@ -3,10 +3,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Home from './features/books/Home';
-import Header from './features/books/Header';
-import Books from './features/books/Books';
-import BookDetails from './features/books/BookDetails';
+import { Home, Header, Books, BookDetails } from './features/books'
 
 function App() {
   return (
