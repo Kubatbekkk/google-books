@@ -1,14 +1,9 @@
-version: '3.4'
+version: '3'
 services:
-  vite_docker:
-    image: node:18.14-alpine
-    container_name: book_docker
-    entrypoint: /bin/sh
+  book_finder:
+    image: book_finder:1.0.2
     ports:
-      - 8000:8000
-    working_dir: /srv/app
-    volumes:
-      - type: bind
-        source: ./
-        target: /srv/app
-    tty: true
+      - '5173:5173'
+    build:
+      context: .
+      dockerfile: Dockerfile
